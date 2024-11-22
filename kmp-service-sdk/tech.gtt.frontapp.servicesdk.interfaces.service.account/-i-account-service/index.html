@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>IAccountService</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+                    <a class="library-name--link" href="../../../index.html">
+                            kmp-service-sdk
+                    </a>
+            </div>
+            <div class="library-version">
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":dokkaHtml/commonMain">Service SDK Documentation</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="kmp-service-sdk::tech.gtt.frontapp.servicesdk.interfaces.service.account/IAccountService///PointingToDeclaration//-1545277508">
+  <div class="breadcrumbs"><a href="../../../index.html">kmp-service-sdk</a><span class="delimiter">/</span><a href="../index.html">tech.gtt.frontapp.servicesdk.interfaces.service.account</a><span class="delimiter">/</span><span class="current">IAccountService</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>IAccount</span><wbr></wbr><span><span>Service</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">interface </span><a href="index.html">IAccountService</a> : <a href="../../tech.gtt.frontapp.servicesdk.interfaces.base/-i-service/index.html">IService</a></div><p class="paragraph">Account service interface.</p><p class="paragraph">Provides all account-related operations including login, registration, account binding, and user information management.</p><p class="paragraph">if your wan to access this service, you can use the following code:</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">IAccountService accountService = serviceSDK.getAccountService()</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">if you want to use it, you can use the following code:</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">SDKResult&lt;IUserInfo&gt; result = accountService.register(RegisterRequest.phone(&quot;phone number&quot;, &quot;psw&quot;, &quot;area code&quot;, 123456, true)).proceed()<br>SDKResult&lt;IUserInfo&gt; result = accountService.account().queryUserInfo().proceed()</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><h4 class="">See also</h4><div class="table"><div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../../tech.gtt.frontapp.servicesdk.interfaces.base/-s-d-k-request/index.html"><span><span>SDKRequest</span></span></a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../../tech.gtt.frontapp.servicesdk.interfaces.base/-s-d-k-result/index.html"><span><span>SDKResult</span></span></a></div></span></div><div></div></div></div></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="691677707%2FFunctions%2F-1545277508" anchor-label="account" id="691677707%2FFunctions%2F-1545277508" data-filterable-set=":dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="account.html"><span><span>account</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="691677707%2FFunctions%2F-1545277508"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="account.html"><span class="token function">account</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-i-account/index.html">IAccount</a></div><div class="brief "><p class="paragraph">Retrieves the account operation handler.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1829311341%2FFunctions%2F-1545277508" anchor-label="bindAccount" id="1829311341%2FFunctions%2F-1545277508" data-filterable-set=":dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="bind-account.html"><span>bind</span><wbr></wbr><span><span>Account</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1829311341%2FFunctions%2F-1545277508"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="bind-account.html"><span class="token function">bindAccount</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">bindAccountRequest<span class="token operator">: </span><a href="../-bind-account-request/index.html">BindAccountRequest</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../tech.gtt.frontapp.servicesdk.interfaces.base/-s-d-k-request/index.html">SDKRequest</a><span class="token operator">&lt;</span><a href="../-i-user-info/index.html">IUserInfo</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Binds an email or phone account.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1291669430%2FFunctions%2F-1545277508" anchor-label="getDeviceSupportLoginMethods" id="1291669430%2FFunctions%2F-1545277508" data-filterable-set=":dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-device-support-login-methods.html"><span>get</span><wbr></wbr><span>Device</span><wbr></wbr><span>Support</span><wbr></wbr><span>Login</span><wbr></wbr><span><span>Methods</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1291669430%2FFunctions%2F-1545277508"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="get-device-support-login-methods.html"><span class="token function">getDeviceSupportLoginMethods</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../tech.gtt.frontapp.servicesdk.interfaces.base/-s-d-k-request/index.html">SDKRequest</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../-login-method/index.html">LoginMethod</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Retrieves the login methods supported by the current device.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1588037009%2FFunctions%2F-1545277508" anchor-label="isLoggedIn" id="1588037009%2FFunctions%2F-1545277508" data-filterable-set=":dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-logged-in.html"><span>is</span><wbr></wbr><span>Logged</span><wbr></wbr><span><span>In</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1588037009%2FFunctions%2F-1545277508"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="is-logged-in.html"><span class="token function">isLoggedIn</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Checks if a user is currently logged in.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="187408589%2FFunctions%2F-1545277508" anchor-label="login" id="187408589%2FFunctions%2F-1545277508" data-filterable-set=":dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="login.html"><span><span>login</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="187408589%2FFunctions%2F-1545277508"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="login.html"><span class="token function">login</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">login<span class="token operator">: </span><a href="../-login-request/index.html">LoginRequest</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../tech.gtt.frontapp.servicesdk.interfaces.base/-s-d-k-request/index.html">SDKRequest</a><span class="token operator">&lt;</span><a href="../-i-user-info/index.html">IUserInfo</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Performs user login.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1193749987%2FFunctions%2F-1545277508" anchor-label="logoff" id="1193749987%2FFunctions%2F-1545277508" data-filterable-set=":dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="logoff.html"><span><span>logoff</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1193749987%2FFunctions%2F-1545277508"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="logoff.html"><span class="token function">logoff</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">logoffRequest<span class="token operator">: </span><a href="../-logoff-request/index.html">LogoffRequest</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../tech.gtt.frontapp.servicesdk.interfaces.base/-s-d-k-request/index.html">SDKRequest</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Closes (deletes) the currently logged-in account.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1855387779%2FFunctions%2F-1545277508" anchor-label="logout" id="-1855387779%2FFunctions%2F-1545277508" data-filterable-set=":dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="logout.html"><span><span>logout</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1855387779%2FFunctions%2F-1545277508"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="logout.html"><span class="token function">logout</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">clearLoginInfo<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../tech.gtt.frontapp.servicesdk.interfaces.base/-s-d-k-request/index.html">SDKRequest</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Logs out the currently logged-in user.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-67237393%2FFunctions%2F-1545277508" anchor-label="queryBindAccountStatus" id="-67237393%2FFunctions%2F-1545277508" data-filterable-set=":dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="query-bind-account-status.html"><span>query</span><wbr></wbr><span>Bind</span><wbr></wbr><span>Account</span><wbr></wbr><span><span>Status</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-67237393%2FFunctions%2F-1545277508"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="query-bind-account-status.html"><span class="token function">queryBindAccountStatus</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">queryBindAccountRequest<span class="token operator">: </span><a href="../-query-bind-account-request/index.html">QueryBindAccountRequest</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../tech.gtt.frontapp.servicesdk.interfaces.base/-s-d-k-request/index.html">SDKRequest</a><span class="token operator">&lt;</span><a href="../-i-bind-account-info/index.html">IBindAccountInfo</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Queries the binding status of an account.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1966681856%2FFunctions%2F-1545277508" anchor-label="queryMobileQrCode" id="-1966681856%2FFunctions%2F-1545277508" data-filterable-set=":dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="query-mobile-qr-code.html"><span>query</span><wbr></wbr><span>Mobile</span><wbr></wbr><span>Qr</span><wbr></wbr><span><span>Code</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1966681856%2FFunctions%2F-1545277508"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="query-mobile-qr-code.html"><span class="token function">queryMobileQrCode</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../tech.gtt.frontapp.servicesdk.interfaces.base/-s-d-k-request/index.html">SDKRequest</a><span class="token operator">&lt;</span><a href="../-i-mobile-qr-code-info/index.html">IMobileQrCodeInfo</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Queries a QR code for mobile login.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-415583205%2FFunctions%2F-1545277508" anchor-label="queryStbQrCode" id="-415583205%2FFunctions%2F-1545277508" data-filterable-set=":dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="query-stb-qr-code.html"><span>query</span><wbr></wbr><span>Stb</span><wbr></wbr><span>Qr</span><wbr></wbr><span><span>Code</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-415583205%2FFunctions%2F-1545277508"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="query-stb-qr-code.html"><span class="token function">queryStbQrCode</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../tech.gtt.frontapp.servicesdk.interfaces.base/-s-d-k-request/index.html">SDKRequest</a><span class="token operator">&lt;</span><a href="../-i-stb-qr-code-info/index.html">IStbQrCodeInfo</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Queries a QR code for set-top box (STB) login or registration.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1235415443%2FFunctions%2F-1545277508" anchor-label="register" id="1235415443%2FFunctions%2F-1545277508" data-filterable-set=":dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="register.html"><span><span>register</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1235415443%2FFunctions%2F-1545277508"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="register.html"><span class="token function">register</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">registerRequest<span class="token operator">: </span><a href="../-register-request/index.html">RegisterRequest</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../tech.gtt.frontapp.servicesdk.interfaces.base/-s-d-k-request/index.html">SDKRequest</a><span class="token operator">&lt;</span><a href="../-i-user-info/index.html">IUserInfo</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Registers a new user account.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="753919947%2FFunctions%2F-1545277508" anchor-label="registerAccountEvent" id="753919947%2FFunctions%2F-1545277508" data-filterable-set=":dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="register-account-event.html"><span>register</span><wbr></wbr><span>Account</span><wbr></wbr><span><span>Event</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="753919947%2FFunctions%2F-1545277508"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="register-account-event.html"><span class="token function">registerAccountEvent</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">action<span class="token operator">: </span><a href="../../tech.gtt.frontapp.servicesdk.interfaces.misc/-i-callback/index.html">ICallback</a><span class="token operator">&lt;</span><a href="../-account-event/index.html">AccountEvent</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../tech.gtt.frontapp.servicesdk.interfaces.base/-s-d-k-dispose/index.html">SDKDispose</a></div><div class="brief "><p class="paragraph">Registers for account-related events.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-921777011%2FFunctions%2F-1545277508" anchor-label="resetPassword" id="-921777011%2FFunctions%2F-1545277508" data-filterable-set=":dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="reset-password.html"><span>reset</span><wbr></wbr><span><span>Password</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-921777011%2FFunctions%2F-1545277508"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="reset-password.html"><span class="token function">resetPassword</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">reSetPasswordRequest<span class="token operator">: </span><a href="../-re-set-password-request/index.html">ReSetPasswordRequest</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../tech.gtt.frontapp.servicesdk.interfaces.base/-s-d-k-request/index.html">SDKRequest</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Resets the email or phone password.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1063014149%2FFunctions%2F-1545277508" anchor-label="sendVerificationCode" id="1063014149%2FFunctions%2F-1545277508" data-filterable-set=":dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="send-verification-code.html"><span>send</span><wbr></wbr><span>Verification</span><wbr></wbr><span><span>Code</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1063014149%2FFunctions%2F-1545277508"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="send-verification-code.html"><span class="token function">sendVerificationCode</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">verificationCodeRequest<span class="token operator">: </span><a href="../-verification-code-request/index.html">VerificationCodeRequest</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../tech.gtt.frontapp.servicesdk.interfaces.base/-s-d-k-request/index.html">SDKRequest</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Sends a verification code.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2024 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

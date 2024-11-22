@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>OrderStatus</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+                    <a class="library-name--link" href="../../../index.html">
+                            kmp-service-sdk
+                    </a>
+            </div>
+            <div class="library-version">
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":dokkaHtml/commonMain">Service SDK Documentation</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="kmp-service-sdk::tech.gtt.frontapp.servicesdk.interfaces.service.bill/OrderStatus///PointingToDeclaration//-1545277508">
+  <div class="breadcrumbs"><a href="../../../index.html">kmp-service-sdk</a><span class="delimiter">/</span><a href="../index.html">tech.gtt.frontapp.servicesdk.interfaces.service.bill</a><span class="delimiter">/</span><span class="current">OrderStatus</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Order</span><wbr></wbr><span><span>Status</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">enum </span><a href="index.html">OrderStatus</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><a href="index.html">OrderStatus</a><span class="token operator">&gt; </span></div><p class="paragraph">Enumeration of order statuses 订单状态枚举</p><p class="paragraph">This enum defines all possible states of an order throughout its lifecycle, including payment processing, chargebacks, and refunds. 该枚举定义了订单生命周期中所有可能的状态，包括支付处理、退单和退款。</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button><button class="section-tab" data-togglable="ENTRY">Entries</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="ENTRY">
+        <h2 class="">Entries</h2>
+        <div class="table"><a data-name="1050161722%2FClasslikes%2F-1545277508" anchor-label="ALL" id="1050161722%2FClasslikes%2F-1545277508" data-filterable-set=":dokkaHtml/commonMain"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-a-l-l/index.html">ALL</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1050161722%2FClasslikes%2F-1545277508"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><div class="block"><a href="-a-l-l/index.html">ALL</a></div></div><div class="brief "><p class="paragraph">All statuses (used for filtering) 所有状态（用于筛选）</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-666443664%2FClasslikes%2F-1545277508" anchor-label="NETWORK_ERROR" id="-666443664%2FClasslikes%2F-1545277508" data-filterable-set=":dokkaHtml/commonMain"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-n-e-t-w-o-r-k_-e-r-r-o-r/index.html">NETWORK_ERROR</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-666443664%2FClasslikes%2F-1545277508"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><div class="block"><a href="-n-e-t-w-o-r-k_-e-r-r-o-r/index.html">NETWORK_ERROR</a></div></div><div class="brief "><p class="paragraph">Network error occurred during processing 处理过程中发生网络错误</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1894355817%2FClasslikes%2F-1545277508" anchor-label="PAYMENT_PENDING" id="-1894355817%2FClasslikes%2F-1545277508" data-filterable-set=":dokkaHtml/commonMain"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-p-a-y-m-e-n-t_-p-e-n-d-i-n-g/index.html">PAYMENT_PENDING</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1894355817%2FClasslikes%2F-1545277508"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><div class="block"><a href="-p-a-y-m-e-n-t_-p-e-n-d-i-n-g/index.html">PAYMENT_PENDING</a></div></div><div class="brief "><p class="paragraph">Payment is pending processing 支付正在处理中</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="484503777%2FClasslikes%2F-1545277508" anchor-label="PAYMENT_SUCCEEDED" id="484503777%2FClasslikes%2F-1545277508" data-filterable-set=":dokkaHtml/commonMain"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-p-a-y-m-e-n-t_-s-u-c-c-e-e-d-e-d/index.html">PAYMENT_SUCCEEDED</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="484503777%2FClasslikes%2F-1545277508"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><div class="block"><a href="-p-a-y-m-e-n-t_-s-u-c-c-e-e-d-e-d/index.html">PAYMENT_SUCCEEDED</a></div></div><div class="brief "><p class="paragraph">Payment completed successfully 支付成功完成</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2121032645%2FClasslikes%2F-1545277508" anchor-label="PAYMENT_FAILED" id="2121032645%2FClasslikes%2F-1545277508" data-filterable-set=":dokkaHtml/commonMain"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-p-a-y-m-e-n-t_-f-a-i-l-e-d/index.html">PAYMENT_FAILED</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2121032645%2FClasslikes%2F-1545277508"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><div class="block"><a href="-p-a-y-m-e-n-t_-f-a-i-l-e-d/index.html">PAYMENT_FAILED</a></div></div><div class="brief "><p class="paragraph">Payment failed to process 支付处理失败</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-405253167%2FClasslikes%2F-1545277508" anchor-label="PAYMENT_CANCELLED" id="-405253167%2FClasslikes%2F-1545277508" data-filterable-set=":dokkaHtml/commonMain"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-p-a-y-m-e-n-t_-c-a-n-c-e-l-l-e-d/index.html">PAYMENT_CANCELLED</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-405253167%2FClasslikes%2F-1545277508"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><div class="block"><a href="-p-a-y-m-e-n-t_-c-a-n-c-e-l-l-e-d/index.html">PAYMENT_CANCELLED</a></div></div><div class="brief "><p class="paragraph">Payment was cancelled 支付已取消</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1680282530%2FClasslikes%2F-1545277508" anchor-label="CHARGEBACK_PENDING" id="1680282530%2FClasslikes%2F-1545277508" data-filterable-set=":dokkaHtml/commonMain"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-c-h-a-r-g-e-b-a-c-k_-p-e-n-d-i-n-g/index.html">CHARGEBACK_PENDING</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1680282530%2FClasslikes%2F-1545277508"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><div class="block"><a href="-c-h-a-r-g-e-b-a-c-k_-p-e-n-d-i-n-g/index.html">CHARGEBACK_PENDING</a></div></div><div class="brief "><p class="paragraph">Chargeback is pending processing 退单正在处理中</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-261881556%2FClasslikes%2F-1545277508" anchor-label="CHARGEBACK_SUCCEEDED" id="-261881556%2FClasslikes%2F-1545277508" data-filterable-set=":dokkaHtml/commonMain"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-c-h-a-r-g-e-b-a-c-k_-s-u-c-c-e-e-d-e-d/index.html">CHARGEBACK_SUCCEEDED</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-261881556%2FClasslikes%2F-1545277508"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><div class="block"><a href="-c-h-a-r-g-e-b-a-c-k_-s-u-c-c-e-e-d-e-d/index.html">CHARGEBACK_SUCCEEDED</a></div></div><div class="brief "><p class="paragraph">Chargeback completed successfully 退单成功完成</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-138032741%2FClasslikes%2F-1545277508" anchor-label="CHARGEBACK_REJECTED" id="-138032741%2FClasslikes%2F-1545277508" data-filterable-set=":dokkaHtml/commonMain"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-c-h-a-r-g-e-b-a-c-k_-r-e-j-e-c-t-e-d/index.html">CHARGEBACK_REJECTED</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-138032741%2FClasslikes%2F-1545277508"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><div class="block"><a href="-c-h-a-r-g-e-b-a-c-k_-r-e-j-e-c-t-e-d/index.html">CHARGEBACK_REJECTED</a></div></div><div class="brief "><p class="paragraph">Chargeback was rejected 退单被拒绝</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1151638500%2FClasslikes%2F-1545277508" anchor-label="CHARGEBACK_CANCELLED" id="-1151638500%2FClasslikes%2F-1545277508" data-filterable-set=":dokkaHtml/commonMain"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-c-h-a-r-g-e-b-a-c-k_-c-a-n-c-e-l-l-e-d/index.html">CHARGEBACK_CANCELLED</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1151638500%2FClasslikes%2F-1545277508"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><div class="block"><a href="-c-h-a-r-g-e-b-a-c-k_-c-a-n-c-e-l-l-e-d/index.html">CHARGEBACK_CANCELLED</a></div></div><div class="brief "><p class="paragraph">Chargeback was cancelled 退单已取消</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1996511551%2FClasslikes%2F-1545277508" anchor-label="REFUND_PENDING" id="1996511551%2FClasslikes%2F-1545277508" data-filterable-set=":dokkaHtml/commonMain"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-r-e-f-u-n-d_-p-e-n-d-i-n-g/index.html">REFUND_PENDING</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1996511551%2FClasslikes%2F-1545277508"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><div class="block"><a href="-r-e-f-u-n-d_-p-e-n-d-i-n-g/index.html">REFUND_PENDING</a></div></div><div class="brief "><p class="paragraph">Refund is pending processing 退款正在处理中</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1308470391%2FClasslikes%2F-1545277508" anchor-label="REFUND_SUCCEEDED" id="-1308470391%2FClasslikes%2F-1545277508" data-filterable-set=":dokkaHtml/commonMain"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-r-e-f-u-n-d_-s-u-c-c-e-e-d-e-d/index.html">REFUND_SUCCEEDED</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1308470391%2FClasslikes%2F-1545277508"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><div class="block"><a href="-r-e-f-u-n-d_-s-u-c-c-e-e-d-e-d/index.html">REFUND_SUCCEEDED</a></div></div><div class="brief "><p class="paragraph">Refund completed successfully 退款成功完成</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1075132318%2FClasslikes%2F-1545277508" anchor-label="REFUND_REJECTED" id="1075132318%2FClasslikes%2F-1545277508" data-filterable-set=":dokkaHtml/commonMain"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-r-e-f-u-n-d_-r-e-j-e-c-t-e-d/index.html">REFUND_REJECTED</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1075132318%2FClasslikes%2F-1545277508"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><div class="block"><a href="-r-e-f-u-n-d_-r-e-j-e-c-t-e-d/index.html">REFUND_REJECTED</a></div></div><div class="brief "><p class="paragraph">Refund was rejected 退款被拒绝</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2096739961%2FClasslikes%2F-1545277508" anchor-label="REFUND_CANCELLED" id="2096739961%2FClasslikes%2F-1545277508" data-filterable-set=":dokkaHtml/commonMain"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-r-e-f-u-n-d_-c-a-n-c-e-l-l-e-d/index.html">REFUND_CANCELLED</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2096739961%2FClasslikes%2F-1545277508"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><div class="block"><a href="-r-e-f-u-n-d_-c-a-n-c-e-l-l-e-d/index.html">REFUND_CANCELLED</a></div></div><div class="brief "><p class="paragraph">Refund was cancelled 退款已取消</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-372974862%2FProperties%2F-1545277508" anchor-label="name" id="-372974862%2FProperties%2F-1545277508" data-filterable-set=":dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../tech.gtt.frontapp.servicesdk.interfaces.service.upgrade/-upgrade-event-type/-u-p-g-r-a-d-e_-d-o-c-k-e-r_-e-v-e-n-t/index.html#-372974862%2FProperties%2F-1545277508"><span><span>name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-372974862%2FProperties%2F-1545277508"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="../../tech.gtt.frontapp.servicesdk.interfaces.service.upgrade/-upgrade-event-type/-u-p-g-r-a-d-e_-d-o-c-k-e-r_-e-v-e-n-t/index.html#-372974862%2FProperties%2F-1545277508">name</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-739389684%2FProperties%2F-1545277508" anchor-label="ordinal" id="-739389684%2FProperties%2F-1545277508" data-filterable-set=":dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../tech.gtt.frontapp.servicesdk.interfaces.service.upgrade/-upgrade-event-type/-u-p-g-r-a-d-e_-d-o-c-k-e-r_-e-v-e-n-t/index.html#-739389684%2FProperties%2F-1545277508"><span><span>ordinal</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-739389684%2FProperties%2F-1545277508"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="../../tech.gtt.frontapp.servicesdk.interfaces.service.upgrade/-upgrade-event-type/-u-p-g-r-a-d-e_-d-o-c-k-e-r_-e-v-e-n-t/index.html#-739389684%2FProperties%2F-1545277508">ordinal</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-2133917549%2FFunctions%2F-1545277508" anchor-label="valueOf" id="-2133917549%2FFunctions%2F-1545277508" data-filterable-set=":dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="value-of.html"><span>value</span><wbr></wbr><span><span>Of</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2133917549%2FFunctions%2F-1545277508"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="value-of.html"><span class="token function">valueOf</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">OrderStatus</a></div><div class="brief "><p class="paragraph">Returns the enum constant of this type with the specified name. The string must match exactly an identifier used to declare an enum constant in this type. (Extraneous whitespace characters are not permitted.)</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1682507041%2FFunctions%2F-1545277508" anchor-label="values" id="-1682507041%2FFunctions%2F-1545277508" data-filterable-set=":dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="values.html"><span><span>values</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1682507041%2FFunctions%2F-1545277508"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="values.html"><span class="token function">values</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><a href="index.html">OrderStatus</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Returns an array containing the constants of this enum type, in the order they're declared.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2024 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
