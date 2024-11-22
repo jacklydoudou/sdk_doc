@@ -45,7 +45,7 @@
                     </a>
             </div>
             <div class="library-version">
-            </div>
+0.0.3            </div>
         </div>
         <div class="filter-section" id="filter-section">
                 <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":dokkaHtml/commonMain">Service SDK Documentation</button>
@@ -65,7 +65,7 @@
   <div class="breadcrumbs"><a href="../../../index.html">kmp-service-sdk</a><span class="delimiter">/</span><a href="../index.html">tech.gtt.frontapp.servicesdk.interfaces.service.bill</a><span class="delimiter">/</span><span class="current">OrderStatus</span></div>
   <div class="cover ">
     <h1 class="cover"><span>Order</span><wbr></wbr><span><span>Status</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">enum </span><a href="index.html">OrderStatus</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><a href="index.html">OrderStatus</a><span class="token operator">&gt; </span></div><p class="paragraph">Enumeration of order statuses 订单状态枚举</p><p class="paragraph">This enum defines all possible states of an order throughout its lifecycle, including payment processing, chargebacks, and refunds. 该枚举定义了订单生命周期中所有可能的状态，包括支付处理、退单和退款。</p></div></div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">enum </span><a href="index.html">OrderStatus</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><a href="index.html">OrderStatus</a><span class="token operator">&gt; </span></div><p class="paragraph">Enumeration representing all possible states of an order throughout its lifecycle.</p><p class="paragraph">This enum defines the complete set of states that an order can be in, including initial payment processing, successful completion, failures, and post-purchase operations like chargebacks and refunds.</p><p class="paragraph">Example usage:</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">// Query orders with specific statuses<br>billService.queryOrderList(listOf(<br>    OrderStatus.PAYMENT_PENDING,<br>    OrderStatus.PAYMENT_SUCCEEDED<br>)).proceed()</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><span class="kdoc-tag"><h4 class="">Since</h4><p class="paragraph">1.0.0</p></span><span class="kdoc-tag"><h4 class="">Author</h4><p class="paragraph">kiana.li</p></span><h4 class="">See also</h4><div class="table"><div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-i-bill-service/query-order-list.html"><span>IBill</span><wbr></wbr><span>Service.</span><wbr></wbr><span>query</span><wbr></wbr><span>Order</span><wbr></wbr><span><span>List</span></span></a></div></span></div><div><div class="title"><p class="paragraph">For retrieving orders by status</p></div></div></div></div><div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-i-order-info/index.html"><span>IOrder</span><wbr></wbr><span><span>Info</span></span></a></div></span></div><div><div class="title"><p class="paragraph">For complete order information</p></div></div></div></div></div></div></div>
   </div>
   <div class="tabbedcontent">
     <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button><button class="section-tab" data-togglable="ENTRY">Entries</button></div>
@@ -82,7 +82,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><div class="block"><a href="-a-l-l/index.html">ALL</a></div></div><div class="brief "><p class="paragraph">All statuses (used for filtering) 所有状态（用于筛选）</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><div class="block"><a href="-a-l-l/index.html">ALL</a></div></div><div class="brief "><p class="paragraph">Special status used to query orders in any state. Used primarily for filtering in list operations.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -97,7 +97,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><div class="block"><a href="-n-e-t-w-o-r-k_-e-r-r-o-r/index.html">NETWORK_ERROR</a></div></div><div class="brief "><p class="paragraph">Network error occurred during processing 处理过程中发生网络错误</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><div class="block"><a href="-n-e-t-w-o-r-k_-e-r-r-o-r/index.html">NETWORK_ERROR</a></div></div><div class="brief "><p class="paragraph">Indicates a network connectivity issue prevented proper order processing or status updates.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -112,7 +112,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><div class="block"><a href="-p-a-y-m-e-n-t_-p-e-n-d-i-n-g/index.html">PAYMENT_PENDING</a></div></div><div class="brief "><p class="paragraph">Payment is pending processing 支付正在处理中</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><div class="block"><a href="-p-a-y-m-e-n-t_-p-e-n-d-i-n-g/index.html">PAYMENT_PENDING</a></div></div><div class="brief "><p class="paragraph">Payment has been initiated but not yet completed. Order is awaiting payment processing confirmation.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -127,7 +127,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><div class="block"><a href="-p-a-y-m-e-n-t_-s-u-c-c-e-e-d-e-d/index.html">PAYMENT_SUCCEEDED</a></div></div><div class="brief "><p class="paragraph">Payment completed successfully 支付成功完成</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><div class="block"><a href="-p-a-y-m-e-n-t_-s-u-c-c-e-e-d-e-d/index.html">PAYMENT_SUCCEEDED</a></div></div><div class="brief "><p class="paragraph">Payment has been successfully processed and confirmed. Order is complete and fulfilled.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -142,7 +142,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><div class="block"><a href="-p-a-y-m-e-n-t_-f-a-i-l-e-d/index.html">PAYMENT_FAILED</a></div></div><div class="brief "><p class="paragraph">Payment failed to process 支付处理失败</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><div class="block"><a href="-p-a-y-m-e-n-t_-f-a-i-l-e-d/index.html">PAYMENT_FAILED</a></div></div><div class="brief "><p class="paragraph">Payment processing encountered an error and failed. Order requires retry or alternative payment method.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -157,7 +157,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><div class="block"><a href="-p-a-y-m-e-n-t_-c-a-n-c-e-l-l-e-d/index.html">PAYMENT_CANCELLED</a></div></div><div class="brief "><p class="paragraph">Payment was cancelled 支付已取消</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><div class="block"><a href="-p-a-y-m-e-n-t_-c-a-n-c-e-l-l-e-d/index.html">PAYMENT_CANCELLED</a></div></div><div class="brief "><p class="paragraph">Payment was cancelled by the user or system. Order is terminated without completion.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -172,7 +172,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><div class="block"><a href="-c-h-a-r-g-e-b-a-c-k_-p-e-n-d-i-n-g/index.html">CHARGEBACK_PENDING</a></div></div><div class="brief "><p class="paragraph">Chargeback is pending processing 退单正在处理中</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><div class="block"><a href="-c-h-a-r-g-e-b-a-c-k_-p-e-n-d-i-n-g/index.html">CHARGEBACK_PENDING</a></div></div><div class="brief "><p class="paragraph">A chargeback request has been initiated and is awaiting processing or review.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -187,7 +187,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><div class="block"><a href="-c-h-a-r-g-e-b-a-c-k_-s-u-c-c-e-e-d-e-d/index.html">CHARGEBACK_SUCCEEDED</a></div></div><div class="brief "><p class="paragraph">Chargeback completed successfully 退单成功完成</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><div class="block"><a href="-c-h-a-r-g-e-b-a-c-k_-s-u-c-c-e-e-d-e-d/index.html">CHARGEBACK_SUCCEEDED</a></div></div><div class="brief "><p class="paragraph">Chargeback request has been approved and processed. Funds have been returned to the payment source.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -202,7 +202,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><div class="block"><a href="-c-h-a-r-g-e-b-a-c-k_-r-e-j-e-c-t-e-d/index.html">CHARGEBACK_REJECTED</a></div></div><div class="brief "><p class="paragraph">Chargeback was rejected 退单被拒绝</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><div class="block"><a href="-c-h-a-r-g-e-b-a-c-k_-r-e-j-e-c-t-e-d/index.html">CHARGEBACK_REJECTED</a></div></div><div class="brief "><p class="paragraph">Chargeback request was denied after review. Original payment remains in effect.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -217,7 +217,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><div class="block"><a href="-c-h-a-r-g-e-b-a-c-k_-c-a-n-c-e-l-l-e-d/index.html">CHARGEBACK_CANCELLED</a></div></div><div class="brief "><p class="paragraph">Chargeback was cancelled 退单已取消</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><div class="block"><a href="-c-h-a-r-g-e-b-a-c-k_-c-a-n-c-e-l-l-e-d/index.html">CHARGEBACK_CANCELLED</a></div></div><div class="brief "><p class="paragraph">Chargeback request was withdrawn or cancelled before completion.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -232,7 +232,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><div class="block"><a href="-r-e-f-u-n-d_-p-e-n-d-i-n-g/index.html">REFUND_PENDING</a></div></div><div class="brief "><p class="paragraph">Refund is pending processing 退款正在处理中</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><div class="block"><a href="-r-e-f-u-n-d_-p-e-n-d-i-n-g/index.html">REFUND_PENDING</a></div></div><div class="brief "><p class="paragraph">A refund request has been initiated and is awaiting processing.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -247,7 +247,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><div class="block"><a href="-r-e-f-u-n-d_-s-u-c-c-e-e-d-e-d/index.html">REFUND_SUCCEEDED</a></div></div><div class="brief "><p class="paragraph">Refund completed successfully 退款成功完成</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><div class="block"><a href="-r-e-f-u-n-d_-s-u-c-c-e-e-d-e-d/index.html">REFUND_SUCCEEDED</a></div></div><div class="brief "><p class="paragraph">Refund has been successfully processed. Funds have been returned to the customer.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -262,7 +262,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><div class="block"><a href="-r-e-f-u-n-d_-r-e-j-e-c-t-e-d/index.html">REFUND_REJECTED</a></div></div><div class="brief "><p class="paragraph">Refund was rejected 退款被拒绝</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><div class="block"><a href="-r-e-f-u-n-d_-r-e-j-e-c-t-e-d/index.html">REFUND_REJECTED</a></div></div><div class="brief "><p class="paragraph">Refund request was denied after review. Original payment remains in effect.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -277,7 +277,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><div class="block"><a href="-r-e-f-u-n-d_-c-a-n-c-e-l-l-e-d/index.html">REFUND_CANCELLED</a></div></div><div class="brief "><p class="paragraph">Refund was cancelled 退款已取消</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><div class="block"><a href="-r-e-f-u-n-d_-c-a-n-c-e-l-l-e-d/index.html">REFUND_CANCELLED</a></div></div><div class="brief "><p class="paragraph">Refund request was withdrawn or cancelled before completion.</p></div></div></div>
                 </div>
               </div>
             </div>
