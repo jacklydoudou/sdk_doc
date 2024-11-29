@@ -45,7 +45,7 @@
                     </a>
             </div>
             <div class="library-version">
-0.0.3            </div>
+0.0.5            </div>
         </div>
         <div class="filter-section" id="filter-section">
                 <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":dokkaHtml/commonMain">Service SDK Documentation</button>
@@ -65,7 +65,7 @@
   <div class="breadcrumbs"><a href="../../../index.html">kmp-service-sdk</a><span class="delimiter">/</span><a href="../index.html">tech.gtt.frontapp.servicesdk.interfaces.service.account</a><span class="delimiter">/</span><span class="current">ReSetPasswordRequest</span></div>
   <div class="cover ">
     <h1 class="cover"><span>Re</span><wbr></wbr><span>Set</span><wbr></wbr><span>Password</span><wbr></wbr><span><span>Request</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">class </span><a href="index.html">ReSetPasswordRequest</a></div><p class="paragraph">Password reset request class 密码重置请求类</p><p class="paragraph">This class handles password reset requests for both phone and email accounts, requiring verification codes for security. 该类处理手机和邮箱账户的密码重置请求，需要验证码以确保安全。</p><span class="kdoc-tag"><h4 class="">Author</h4><p class="paragraph">Zack</p></span></div></div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">class </span><a href="index.html">ReSetPasswordRequest</a></div><p class="paragraph">Password reset request class</p><p class="paragraph">This class handles password reset requests for both phone and email accounts, requiring verification codes for security.</p><p class="paragraph">if you want to use it, you can use the one of the following methods:</p><ul><li><p class="paragraph"><a href="-companion/phone.html">phone</a>: creates a phone account password reset request.</p></li><li><p class="paragraph"><a href="-companion/email.html">email</a>: creates an email account password reset request.</p></li></ul><h2 class="">Example Usage</h2><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">val result = ReSetPasswordRequest.phone(&quot;phone account&quot;, &quot;new password&quot;, &quot;areaCode&quot;, &quot;verification code&quot;)</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><span class="kdoc-tag"><h4 class="">Author</h4><p class="paragraph">Zack</p></span></div></div>
   </div>
   <div class="tabbedcontent">
     <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
@@ -101,7 +101,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">var </span><a href="account.html">account</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Account identifier (phone/email) / 账户标识符（手机/邮箱）</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">var </span><a href="account.html">account</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Account identifier (phone/email)</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -116,7 +116,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">var </span><a href="account-login-type.html">accountLoginType</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Account login type / 账户登录类型</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">var </span><a href="account-login-type.html">accountLoginType</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Account login type</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -131,7 +131,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">var </span><a href="area-code.html">areaCode</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Area/country code / 区号/国家代码</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">var </span><a href="area-code.html">areaCode</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Area/country code</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -146,7 +146,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">var </span><a href="new-pwd.html">newPwd</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">New password / 新密码</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">var </span><a href="new-pwd.html">newPwd</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">New password</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -161,7 +161,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">var </span><a href="verify-code.html">verifyCode</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Verification code / 验证码</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">var </span><a href="verify-code.html">verifyCode</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Verification code</p></div></div></div>
                 </div>
               </div>
             </div>

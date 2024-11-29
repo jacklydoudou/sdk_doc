@@ -45,7 +45,7 @@
                     </a>
             </div>
             <div class="library-version">
-0.0.3            </div>
+0.0.5            </div>
         </div>
         <div class="filter-section" id="filter-section">
                 <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":dokkaHtml/commonMain">Service SDK Documentation</button>
@@ -65,7 +65,7 @@
   <div class="breadcrumbs"><a href="../../../index.html">kmp-service-sdk</a><span class="delimiter">/</span><a href="../index.html">tech.gtt.frontapp.servicesdk.interfaces.service.account</a><span class="delimiter">/</span><span class="current">ILastLoginInfo</span></div>
   <div class="cover ">
     <h1 class="cover"><span>ILast</span><wbr></wbr><span>Login</span><wbr></wbr><span><span>Info</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">ILastLoginInfo</a></div><p class="paragraph">Interface for last login information 最近登录信息接口</p><p class="paragraph">This interface defines the structure for storing information about a single login history entry, including login method and credentials. 该接口定义了存储单个登录历史记录的结构，包括登录方式和凭据信息。</p></div></div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">ILastLoginInfo</a></div><p class="paragraph">Interface for last login information</p><p class="paragraph">This interface defines the structure for storing information about a single login history entry, including login method and credentials.</p></div></div>
   </div>
   <div class="tabbedcontent">
     <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
@@ -82,7 +82,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">val </span><a href="account.html">account</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Account identifier (email address, phone number, etc.) 账户标识符（邮箱地址、手机号码等）</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">val </span><a href="account.html">account</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Account identifier (email address, phone number, etc.)</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -97,7 +97,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">val </span><a href="area-code.html">areaCode</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Area/country code (for phone numbers) 区号/国家代码（用于手机号码）</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">val </span><a href="area-code.html">areaCode</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Area/country code (for phone numbers)</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -112,7 +112,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">val </span><a href="encryption-password.html">encryptionPassword</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Encrypted password (for email or phone login methods) 加密的密码（用于邮箱或手机登录方式）</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">val </span><a href="encryption-password.html">encryptionPassword</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Encrypted password (for email or phone login methods)</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -127,7 +127,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">val </span><a href="login-method.html">loginMethod</a><span class="token operator">: </span><a href="../-login-method/index.html">LoginMethod</a></div><div class="brief "><p class="paragraph">Login method used (email, phone, recharge code, etc.) 使用的登录方式（邮箱、手机、充值码等）</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">val </span><a href="login-method.html">loginMethod</a><span class="token operator">: </span><a href="../-login-method/index.html">LoginMethod</a></div><div class="brief "><p class="paragraph">Login method used (email, phone, recharge code, etc.)</p></div></div></div>
                 </div>
               </div>
             </div>

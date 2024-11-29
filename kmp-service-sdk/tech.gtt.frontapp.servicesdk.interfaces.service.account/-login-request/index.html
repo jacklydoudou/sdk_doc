@@ -45,7 +45,7 @@
                     </a>
             </div>
             <div class="library-version">
-0.0.3            </div>
+0.0.5            </div>
         </div>
         <div class="filter-section" id="filter-section">
                 <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":dokkaHtml/commonMain">Service SDK Documentation</button>
@@ -65,7 +65,7 @@
   <div class="breadcrumbs"><a href="../../../index.html">kmp-service-sdk</a><span class="delimiter">/</span><a href="../index.html">tech.gtt.frontapp.servicesdk.interfaces.service.account</a><span class="delimiter">/</span><span class="current">LoginRequest</span></div>
   <div class="cover ">
     <h1 class="cover"><span>Login</span><wbr></wbr><span><span>Request</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">class </span><a href="index.html">LoginRequest</a></div><p class="paragraph">Login request class for handling various authentication methods 处理各种认证方法的登录请求类</p><p class="paragraph">This class provides factory methods for creating login requests with different authentication methods, such as phone, email, recharge card, etc. 该类提供了使用不同认证方法创建登录请求的工厂方法，如手机、邮箱、充值卡等。</p></div></div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">class </span><a href="index.html">LoginRequest</a></div><p class="paragraph">Login request class for handling various authentication methods</p><p class="paragraph">This class provides factory methods for creating login requests with different authentication methods, such as phone, email, recharge card, etc.</p><h2 class="">Companion Methods</h2><p class="paragraph">The following companion methods are available for creating instances of <a href="index.html">LoginRequest</a>:</p><ul><li><p class="paragraph"><a href="-companion/phone.html">phone</a>: use phone account to create a login request.</p></li><li><p class="paragraph"><a href="-companion/email.html">email</a>: use email account to create a login request.</p></li><li><p class="paragraph"><a href="-companion/recharge-card-code.html">rechargeCardCode</a>: use rechargeCardCode to create a login request.</p></li><li><p class="paragraph"><a href="-companion/virtual-code.html">virtualCode</a>: create a login request for the device account.</p></li><li><p class="paragraph"><a href="-companion/visitor.html">visitor</a>: create a login request for the visitor.</p></li><li><p class="paragraph"><a href="-companion/auth-code-from-logged-in-q-r-code.html">authCodeFromLoggedInQRCode</a>: Creates a login request using QR code from logged-in device.</p></li><li><p class="paragraph"><a href="-companion/auth-code-from-server.html">authCodeFromServer</a>: Creates a login request using server authorization code.</p></li><li><p class="paragraph"><a href="-companion/google.html">google</a>: Creates a login request using Third-party accounts such as Google.</p></li><li><p class="paragraph"><a href="-companion/pre-install.html">preInstall</a>: Creates a pre-installed prepaid login request.</p></li><li><p class="paragraph"><a href="-companion/activate-code.html">activateCode</a>: Creates an activation code login request.</p></li></ul><h2 class="">Example Usage</h2><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">val loginRequest = LoginRequest.phone(<br>    phone = &quot;110800&quot;,<br>    password = &quot;password123&quot;,<br>    areaCode = &quot;55&quot;,<br>    autoLogin = true<br>    savePwd = true<br>)</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
   </div>
   <div class="tabbedcontent">
     <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
@@ -101,7 +101,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">var </span><a href="account.html">account</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Account identifier (phone/email/etc.) / 账户标识符（手机/邮箱等）</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">var </span><a href="account.html">account</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Account identifier (phone/email/etc.)</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -116,7 +116,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">var </span><a href="area-code.html">areaCode</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Area/country code / 区号/国家代码</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">var </span><a href="area-code.html">areaCode</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Area/country code</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -131,7 +131,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">var </span><a href="create-account.html">createAccount</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Whether to create a new account / 是否创建新账户</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">var </span><a href="create-account.html">createAccount</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Whether to create a new account</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -146,7 +146,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">var </span><a href="login-type.html">loginType</a><span class="token operator">: </span><a href="../-login-method/index.html">LoginMethod</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Login method type / 登录方式类型</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">var </span><a href="login-type.html">loginType</a><span class="token operator">: </span><a href="../-login-method/index.html">LoginMethod</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Login method type</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -161,7 +161,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">var </span><a href="password.html">password</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Account password / 账户密码</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">var </span><a href="password.html">password</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Account password</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -176,7 +176,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">var </span><a href="save-pwd.html">savePwd</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Whether to save password / 是否保存密码</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">var </span><a href="save-pwd.html">savePwd</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Whether to save password</p></div></div></div>
                 </div>
               </div>
             </div>

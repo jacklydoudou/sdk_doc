@@ -45,7 +45,7 @@
                     </a>
             </div>
             <div class="library-version">
-0.0.3            </div>
+0.0.5            </div>
         </div>
         <div class="filter-section" id="filter-section">
                 <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":dokkaHtml/commonMain">Service SDK Documentation</button>
@@ -65,7 +65,7 @@
   <div class="breadcrumbs"><a href="../../../index.html">kmp-service-sdk</a><span class="delimiter">/</span><a href="../index.html">tech.gtt.frontapp.servicesdk.interfaces.service.meta</a><span class="delimiter">/</span><span class="current">IMetaService</span></div>
   <div class="cover ">
     <h1 class="cover"><span>IMeta</span><wbr></wbr><span><span>Service</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">interface </span><a href="index.html">IMetaService</a> : <a href="../../tech.gtt.frontapp.servicesdk.interfaces.base/-i-service/index.html">IService</a></div></div></div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">interface </span><a href="index.html">IMetaService</a> : <a href="../../tech.gtt.frontapp.servicesdk.interfaces.base/-i-service/index.html">IService</a></div><p class="paragraph">Interface representing the metadata service in the application.</p><p class="paragraph">This interface defines the methods and structure for interacting with the metadata service, which is responsible for providing metadata-related information and configurations.</p><p class="paragraph">if your wan to access this service, you can use the following code:</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">IMetaService metaService = serviceSDK.getMetaService()</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">if you want to use it, you can use the following code:</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">SDKResult&lt;IRootNode&gt; result = metaService.queryHomeLayout(HomeLayoutRequest.queryHomeLayout(nodeId, depth, pageId, pageSize, &quot;checksum&quot;)).proceed()</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><span class="kdoc-tag"><h4 class="">Author</h4><p class="paragraph">Zack</p></span><span class="kdoc-tag"><h4 class="">Since</h4><p class="paragraph">2024-11-20</p></span><h4 class="">See also</h4><div class="table"><div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../../tech.gtt.frontapp.servicesdk.interfaces.base/-s-d-k-request/index.html"><span><span>SDKRequest</span></span></a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../../tech.gtt.frontapp.servicesdk.interfaces.base/-s-d-k-result/index.html"><span><span>SDKResult</span></span></a></div></span></div><div></div></div></div></div></div></div>
   </div>
   <div class="tabbedcontent">
     <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
@@ -82,7 +82,52 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="query-home-layout.html"><span class="token function">queryHomeLayout</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">homeLayoutRequest<span class="token operator">: </span><a href="../-home-layout-request/index.html">HomeLayoutRequest</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../tech.gtt.frontapp.servicesdk.interfaces.base/-s-d-k-request/index.html">SDKRequest</a><span class="token operator">&lt;</span><a href="../-i-root-node/index.html">IRootNode</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">query home page layout config info</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="query-home-layout.html"><span class="token function">queryHomeLayout</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">homeLayoutRequest<span class="token operator">: </span><a href="../-home-layout-request/index.html">HomeLayoutRequest</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../tech.gtt.frontapp.servicesdk.interfaces.base/-s-d-k-request/index.html">SDKRequest</a><span class="token operator">&lt;</span><a href="../../tech.gtt.frontapp.servicesdk.interfaces.service.meta.node/-root-node/index.html">RootNode</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Queries the home page layout configuration information.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-4547962%2FFunctions%2F-1545277508" anchor-label="queryMovieDetail" id="-4547962%2FFunctions%2F-1545277508" data-filterable-set=":dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="query-movie-detail.html"><span>query</span><wbr></wbr><span>Movie</span><wbr></wbr><span><span>Detail</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-4547962%2FFunctions%2F-1545277508"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="query-movie-detail.html"><span class="token function">queryMovieDetail</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">videoDetailRequest<span class="token operator">: </span><a href="../-video-detail-request/index.html">VideoDetailRequest</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../tech.gtt.frontapp.servicesdk.interfaces.base/-s-d-k-request/index.html">SDKRequest</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../-video/index.html">Video</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Queries movie details based on the provided movie detail request.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="776822626%2FFunctions%2F-1545277508" anchor-label="queryMovieExtraDetail" id="776822626%2FFunctions%2F-1545277508" data-filterable-set=":dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="query-movie-extra-detail.html"><span>query</span><wbr></wbr><span>Movie</span><wbr></wbr><span>Extra</span><wbr></wbr><span><span>Detail</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="776822626%2FFunctions%2F-1545277508"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="query-movie-extra-detail.html"><span class="token function">queryMovieExtraDetail</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">videoExtraDetailRequest<span class="token operator">: </span><a href="../-video-extra-detail-request/index.html">VideoExtraDetailRequest</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../tech.gtt.frontapp.servicesdk.interfaces.base/-s-d-k-request/index.html">SDKRequest</a><span class="token operator">&lt;</span><a href="../-video-extra-detail/index.html">VideoExtraDetail</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Queries movie extra details based on the provided movie extra detail request.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1357380179%2FFunctions%2F-1545277508" anchor-label="queryPersonDetail" id="-1357380179%2FFunctions%2F-1545277508" data-filterable-set=":dokkaHtml/commonMain"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/commonMain" data-filterable-set=":dokkaHtml/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="query-person-detail.html"><span>query</span><wbr></wbr><span>Person</span><wbr></wbr><span><span>Detail</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1357380179%2FFunctions%2F-1545277508"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="query-person-detail.html"><span class="token function">queryPersonDetail</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">personDetailRequest<span class="token operator">: </span><a href="../-person-detail-request/index.html">PersonDetailRequest</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../tech.gtt.frontapp.servicesdk.interfaces.base/-s-d-k-request/index.html">SDKRequest</a><span class="token operator">&lt;</span><a href="../-person/index.html">Person</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Queries person details based on the provided person detail request.</p></div></div></div>
                 </div>
               </div>
             </div>

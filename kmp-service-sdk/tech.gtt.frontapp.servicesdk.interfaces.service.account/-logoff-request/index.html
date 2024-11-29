@@ -45,7 +45,7 @@
                     </a>
             </div>
             <div class="library-version">
-0.0.3            </div>
+0.0.5            </div>
         </div>
         <div class="filter-section" id="filter-section">
                 <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":dokkaHtml/commonMain">Service SDK Documentation</button>
@@ -65,7 +65,7 @@
   <div class="breadcrumbs"><a href="../../../index.html">kmp-service-sdk</a><span class="delimiter">/</span><a href="../index.html">tech.gtt.frontapp.servicesdk.interfaces.service.account</a><span class="delimiter">/</span><span class="current">LogoffRequest</span></div>
   <div class="cover ">
     <h1 class="cover"><span>Logoff</span><wbr></wbr><span><span>Request</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">class </span><a href="index.html">LogoffRequest</a></div><p class="paragraph">Account closure request class 账户注销请求类</p><p class="paragraph">This class handles requests for closing (deleting) user accounts, requiring authentication to ensure the request is legitimate. 该类处理用户账户的注销（删除）请求，需要认证以确保请求的合法性。</p></div></div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">class </span><a href="index.html">LogoffRequest</a></div><p class="paragraph">Account closure request class</p><p class="paragraph">This class handles requests for closing (deleting) user accounts, requiring authentication to ensure the request is legitimate.</p><p class="paragraph">if you want to use it, you can use the one of the following methods:</p><ul><li><p class="paragraph"><a href="-companion/logoff.html">logoff</a>: creates an account closure request</p></li></ul><h2 class="">Example Usage</h2><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">val result = LogoffRequest.logoff(&quot;current account's password&quot;)</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
   </div>
   <div class="tabbedcontent">
     <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
@@ -101,7 +101,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">var </span><a href="authentication-key.html">authenticationKey</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Authentication key / 认证密钥</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">var </span><a href="authentication-key.html">authenticationKey</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Authentication key</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -116,7 +116,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">var </span><a href="password.html">password</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Account password / 账户密码</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">var </span><a href="password.html">password</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Account password</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -131,7 +131,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">var </span><a href="user-random-value.html">userRandomValue</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">User random value / 用户随机值</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">var </span><a href="user-random-value.html">userRandomValue</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">User random value</p></div></div></div>
                 </div>
               </div>
             </div>

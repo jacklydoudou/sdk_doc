@@ -45,7 +45,7 @@
                     </a>
             </div>
             <div class="library-version">
-0.0.3            </div>
+0.0.5            </div>
         </div>
         <div class="filter-section" id="filter-section">
                 <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":dokkaHtml/commonMain">Service SDK Documentation</button>
@@ -65,7 +65,7 @@
   <div class="breadcrumbs"><a href="../../../index.html">kmp-service-sdk</a><span class="delimiter">/</span><a href="../index.html">tech.gtt.frontapp.servicesdk.interfaces.service.search</a><span class="delimiter">/</span><span class="current">PopularSearchRequest</span></div>
   <div class="cover ">
     <h1 class="cover"><span>Popular</span><wbr></wbr><span>Search</span><wbr></wbr><span><span>Request</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">class </span><a href="index.html">PopularSearchRequest</a></div><p class="paragraph">Request class for popular/trending search functionality 热门搜索功能的请求类</p><span class="kdoc-tag"><h4 class="">Author</h4><p class="paragraph">Zack</p></span><span class="kdoc-tag"><h4 class="">Since</h4><p class="paragraph">2024-10-23</p></span></div></div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">class </span><a href="index.html">PopularSearchRequest</a></div><p class="paragraph">Request class for popular/trending search functionality</p><h2 class="">Companion Methods</h2><p class="paragraph">The following companion methods are available for creating instances of <a href="index.html">PopularSearchRequest</a>:</p><ul><li><p class="paragraph"><a href="-companion/search.html">search</a>: creates a new popular search request.</p></li></ul><h2 class="">Example Usage</h2><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">val popularSearchRequest = PopularSearchRequest.search(<br>    listType = SearchListType.GENRELIST,<br>    sensitive = 1,<br>)</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><span class="kdoc-tag"><h4 class="">Author</h4><p class="paragraph">Zack</p></span><span class="kdoc-tag"><h4 class="">Since</h4><p class="paragraph">2024-10-23</p></span></div></div>
   </div>
   <div class="tabbedcontent">
     <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
@@ -101,7 +101,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">var </span><a href="list-type.html">listType</a><span class="token operator">: </span><a href="../-search-list-type/index.html">SearchListType</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Type of search list to query 要查询的搜索列表类型</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">var </span><a href="list-type.html">listType</a><span class="token operator">: </span><a href="../-search-list-type/index.html">SearchListType</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">The type of search list to query (genre list, hot search, or recommendations)</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -116,7 +116,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">var </span><a href="sensitive.html">sensitive</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Case sensitivity flag 大小写敏感标志</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">var </span><a href="sensitive.html">sensitive</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Case sensitivity flag， Flag search (1: sensitive, 0: insensitive)</p></div></div></div>
                 </div>
               </div>
             </div>
